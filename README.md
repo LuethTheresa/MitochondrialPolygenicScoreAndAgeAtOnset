@@ -15,7 +15,7 @@ You can customize this step as needed or leave the last line of the bash script 
 
 The scripts also results in some bigger intermediate PLINK files (for each filter step), which can be deleted but are very useful for trouble shooting.
 
-Lastly, you will need to execute the R script to visualize the PCA clusters and you will get a PCA.png as a result. 
+Lastly, you will need to execute the R script to visualize the PCA clusters and you will get a PCA.tiff as a result. 
 
 `PCA_visualize.R`
 
