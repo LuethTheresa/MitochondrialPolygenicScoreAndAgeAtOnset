@@ -1,7 +1,7 @@
 # **Interaction of mitochondrial polygenic score and lifestyle/environmental factors in LRRK2 p.Gly2019Ser parkinsonism**
 
 Our study investigated the relationship between the mitochondrial polygenic score (MGS) and lifestyle/environmental data and its impact on age at onset in LRRK2 p.Gly2019Ser parkinsonism (*LRRK2*-PD) and idiopathic PD (iPD).
-In this repository, we describe how the principal component analysis (PCA) was performed and visualized and how the MGS was calculated and its association with AAO was analyzed. All bash scripts were written for a slurm based compute cluster.
+In this repository, we describe how the principal component analysis (PCA) was performed and visualized and how the MGS was calculated and its association with AAO was analyzed. All bash scripts were written for a slurm-based compute cluster.
 
 ## PCA
 
@@ -10,10 +10,10 @@ To perform the PCA, execute the PCA.sh script and replace the name of your files
 
 `PCA.sh NameOfThe1kGenomesPlinkFile NameOfTheStudyCohortPlinkFile`
 
-For the visualization of the PCA, you need the resulting 1000k_study_cohort.PCA_plot.eigenvec and 1000k_study_cohort.eigenval files. The scripts adds a 13th column to your 1000k_study_cohort.eigenvec file including the 1000 Genomes Project super populations (i.e., AFR=African, EAS=East Asian, AMR=Ad Mixed American, EUR=European and SAS=South Asian) and the name of your study cohort for all the samples of that cohort.
+For the visualization of the PCA, you need the resulting 1000k_study_cohort.PCA_plot.eigenvec and 1000k_study_cohort.eigenval files. The script adds a 13th column to your 1000k_study_cohort.eigenvec file including the 1000 Genomes Project super populations (i.e., AFR=African, EAS=East Asian, AMR=Ad Mixed American, EUR=European and SAS=South Asian) and the name of your study cohort for all the samples of that cohort.
 You can customize this step as needed or leave the last line of the bash script as it is.
 
-The scripts also results in some bigger intermediate PLINK files (for each filter step), which can be deleted but are very useful for trouble shooting.
+The scripts also result in some bigger intermediate PLINK files (for each filter step), which can be deleted but are very useful for troubleshooting.
 
 Lastly, you will need to execute the R script to visualize the PCA clusters and you will get a PCA.tiff as a result. 
 
@@ -46,10 +46,10 @@ To assess the association with e.g. AAO you can use the following R command, whi
 
 ## Citation
 
-Please cite our preprint: 
+Please cite our publication: 
 
-*Interaction of mitochondrial polygenic score and environmental factors in LRRK2 p.Gly2019Ser parkinsonism*
+*Interaction of Mitochondrial Polygenic Score and Lifestyle Factors in LRRK2 p.Gly2019Ser Parkinsonism*
 
-Theresa Lüth, Carolin Gabbert, Inke R. König, Amke Caliebe, Sebastian Koch, Björn-Hergen Laabs, Faycel Hentati, Samia Ben Sassi, Rim Amouri, Malte Spielmann, Christine Klein, Anne Grünewald, Matthew J. Farrer, Joanne Trinh
+Theresa Lüth, Carolin Gabbert, Sebastian Koch, Inke R König, Amke Caliebe, Björn-Hergen Laabs, Faycel Hentati, Samia Ben Sassi, Rim Amouri, Malte Spielmann, Christine Klein, Anne Grünewald, Matthew J Farrer, Joanne Trinh
 
-medRxiv 2023.01.02.23284113; doi: https://doi.org/10.1101/2023.01.02.23284113
+Mov Disord. 2023 Jul 21, doi: 10.1002/mds.29563
